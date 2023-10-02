@@ -59,6 +59,21 @@ public class PlatformerController : MonoBehaviour
             newVelocity.x = 0; // remove velocity
         }
 
+        if (Input.GetKey(KeyCode.UpArrow)) //If we are pressing the up arrow
+        {
+            newVelocity.y = speed; //set to y value to be negative speed (because speed is a number)
+        }
+
+        else if (Input.GetKey(KeyCode.DownArrow)) // If you are pressing the down arrow
+        {
+            newVelocity.y = -speed; //Set the y value to be speed
+        }
+
+        else //If we are not pressing either the down or up arrow keys...
+        {
+            newVelocity.y = 0; // remove velocity
+        }
+
         //When we've worked out what the velocity should be, we write the value back onto our rigidbody so it will move
         rb.velocity = newVelocity;
     }
