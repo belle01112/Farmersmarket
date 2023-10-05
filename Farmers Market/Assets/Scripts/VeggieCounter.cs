@@ -6,7 +6,7 @@ using TMPro;
 public class VeggieCounter : MonoBehaviour
 {
     public static VeggieCounter instance;
-    public TMP_Text veggieText;
+    public TextMeshProUGUI veggieText;
     public int currentVeggies = 0;
 
     private void Awake()
@@ -18,7 +18,8 @@ public class VeggieCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        veggieText.text = "VEGGIES: " + currentVeggies.ToString();
+        Debug.Log(veggieText.text);
+        veggieText.text = "VEGGIES: " + currentVeggies;
     }
 
     public void IncreaseVeggies(int v)

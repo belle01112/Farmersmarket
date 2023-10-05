@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2555602344625633508}
   - component: {fileID: 4261185748086457445}
   - component: {fileID: 4480912293954312069}
+  - component: {fileID: 5367792718385046031}
   - component: {fileID: 6695734469299976331}
   m_Layer: 0
   m_Name: Collision
@@ -46,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351289ce8cc59a64a9bf168eec2b8be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDisable: {fileID: 0}
+  objectToDisable: {fileID: 3096110521491944459}
 --- !u!114 &4261185748086457445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +77,19 @@ CircleCollider2D:
   m_Offset: {x: -0.36254358, y: 0}
   serializedVersion: 2
   m_Radius: 0.13745642
+--- !u!114 &5367792718385046031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096110521491944459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1c997b8c705474aac590cd771d705a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 1
 --- !u!212 &6695734469299976331
 SpriteRenderer:
   m_ObjectHideFlags: 0
